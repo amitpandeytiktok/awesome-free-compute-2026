@@ -6,6 +6,13 @@
 
 This was compiled from a multi-model research sweep of official pricing/docs pages (not blog hearsay), with conflicts resolved against primary sources.
 
+> [!TIP]
+> **👉 New: [The Free Token-Maxxing Guide](./TOKEN-MAXXING.md)** — a deeper playbook on
+> getting maximum frontier-model usage for $0: free LLM APIs, free coding tools,
+> the BYO-key trick, orchestration with LiteLLM/OpenRouter, quota-stretching, and a
+> full **🇨🇳 China section** (how "100M tokens for ~$1" works, cheap coding plans,
+> and free **image/video** generation for creators).
+
 ---
 
 ## Contents
