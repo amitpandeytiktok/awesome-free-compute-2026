@@ -438,7 +438,9 @@ ComfyUI or Diffusers.
 
 > 🎙️ **Need the *soundtrack* too?** Video is only half a music video — see the
 > companion **[Free Audio Generation Guide](./AUDIO.md)** for free, commercially-clean
-> **music** (ACE-Step), **voice/TTS**, and **lyric-timing/transcription** (WhisperX).
+> **music** (ACE-Step), **voice/TTS**, and **lyric-timing/transcription** (WhisperX),
+> and the **[Media Post-Production Guide](./POST-PRODUCTION.md)** 🎬 to finish it
+> (4K upscale, 60fps, mastering, subtitles, dubbing).
 
 ⚠️ **"CogVideoX-Flash free"** is **not confirmed for 2026** — there's no free video
 model on international Z.ai (CogVideoX-3 is paid). The free Flash video tier was a

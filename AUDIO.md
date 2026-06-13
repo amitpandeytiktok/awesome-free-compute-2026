@@ -13,6 +13,8 @@ Opus 4.8) and reconciled against official sources.
 This is a companion to the main [Awesome Free Compute](./README.md) list and the
 [Free Token-Maxxing Guide](./TOKEN-MAXXING.md) (LLMs/tokens). This file is the
 **audio** half: anything you'd need to score, narrate, and caption a video for $0.
+Once you've generated the audio, the [Media Post-Production Guide](./POST-PRODUCTION.md)
+🎬 covers **finishing** it — stem separation, mastering, loudness, dubbing.
 
 ---
 

@@ -15,6 +15,9 @@ This was compiled from a multi-model research sweep of official pricing/docs pag
 > - **[The Free Audio Generation Guide](./AUDIO.md)** 🎙️ — free **music, voice (TTS +
 >   cloning), and transcription** for creators, with a hard focus on **commercial
 >   licensing** (which "free" tools you can actually monetize).
+> - **[The Free Media Post-Production Guide](./POST-PRODUCTION.md)** 🎬 — *finish* it for
+>   $0: **4K upscale, 60fps interpolation, stem separation, mastering/loudness,
+>   subtitles & dubbing** — again filtered hard on commercial licensing.
 
 ---
 
