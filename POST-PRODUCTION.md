@@ -22,7 +22,8 @@ is the **post / finishing** layer that takes generated media to publish-ready.
 - [1. Video finishing](#1-video-finishing)
 - [2. Audio finishing](#2-audio-finishing)
 - [3. Translation, subtitles, dubbing](#3-translation-subtitles-dubbing)
-- [4. The $0 finishing pipelines](#4-the-0-finishing-pipelines)
+- [4. Visual assets and compositing](#4-visual-assets-and-compositing)
+- [5. The $0 finishing pipelines](#5-the-0-finishing-pipelines)
 - [Sources](#sources)
 
 ---
@@ -69,6 +70,9 @@ bundled into the free GUIs everyone uses.
 | **Coqui XTTS-v2** | CPML (non-commercial, incl. outputs) | Dubbing voice |
 | **ElevenLabs** free tier | commercial license only from Starter ($5/mo) | Dubbing voice |
 | ❔ **Mel-Band Roformer / many MDX-Net checkpoints** | code MIT but **weights often have *no stated license*** — treat as unverified | Stem separation |
+| **BRIA RMBG 1.4 / 2.0** | **CC-BY-NC** — *the silent default in many "remove background" tools* | Background removal |
+| **Stable Zero123** | Stability **non-commercial** research license | Image→3D |
+| **Meshy · Tripo · Rodin** *(free tiers)* | free web outputs are **CC-BY-NC** (commercial needs a paid plan) | Image→3D |
 
 ### ✅ Green-light — free *and* commercial
 
@@ -79,7 +83,10 @@ RestoreFormer / DDColor (Apache), **Google FILM / FLAVR / IFRNet** (Apache/MIT),
 **Matchering** (GPL), **ffmpeg** / **Audacity** · **IndicTrans2** (MIT), Opus-MT /
 **MADLAD-400** (Apache), **Azure Translator F0** / **DeepL Free** / **Google
 Translation** free tiers, **Whisper** (MIT), Subtitle Edit / Aegisub, **OpenVoice**
-(MIT).
+(MIT). **Compositing / 3D (§4):** **SAM 2** (Apache), **BiRefNet** / InSPyReNet /
+MODNet / rembg (MIT/Apache), **RVM** (GPL-3), **TRELLIS** / **TripoSR** /
+InstantMesh (MIT/Apache), **Hunyuan3D** (Tencent Community), **Stable Fast 3D**
+(Stability, <$1M rev).
 
 ---
 
@@ -235,7 +242,57 @@ their free-tier commercial rights/watermarks are **⚠️ unverified** — check
 
 ---
 
-## 4. The $0 finishing pipelines
+## 4. Visual assets and compositing
+
+Two creative finishing powers: pull your subject off its background (matting) to
+composite over an AI-generated scene, and spin up 3D props/visualizers — all $0 and
+commercial-clean. Run everything in **ComfyUI on Apple Silicon (MPS)** or free
+Colab/Kaggle.
+
+### 4.1 Background removal & video matting
+
+⚠️ The popular **BRIA RMBG** (1.4 & 2.0) is **CC-BY-NC — non-commercial**, and it's the
+*silent default* in many "remove background" tools. Commercial-clean alternatives:
+
+| Tool | License | Commercial? | Video | Best at |
+|---|---|---|---|---|
+| **Robust Video Matting (RVM)** | GPL-3.0 | ✅ *(your render is yours)* | ✅ real-time | soft, flicker-free alpha for a **moving person** |
+| **BiRefNet** | MIT | ✅ | stills (per-frame) | highest-quality stills/hair — the RMBG replacement |
+| **Meta SAM 2** | Apache-2.0 | ✅ | ✅ (tracking) | tracking a **prop** across frames (hard mask → blur edge) |
+| **MODNet** | Apache-2.0 | ✅ | ✅ | fast portrait matting |
+| **rembg** (U²-Net / IS-Net) | MIT | ✅ | stills/video | one-command CLI / app |
+| **InSPyReNet** | MIT | ✅ | stills | very high-res salient cutouts |
+| ~~BRIA RMBG 1.4 / 2.0~~ | CC-BY-NC | ❌ | stills | *(avoid on monetized work)* |
+
+**Pick:** **RVM** for a person dancing in a music video (temporally stable soft alpha),
+**BiRefNet** for poster/thumbnail cutouts, **SAM 2** to track a specific prop.
+
+### 4.2 Image / text → 3D (props, visualizers, motion graphics)
+
+Generate a mesh (GLB/OBJ) from one image or a prompt, then drop it into Blender / After
+Effects for spinning logos, props, or abstract visualizers. ~8–12 GB VRAM; a 16 GB+ Mac
+runs these locally.
+
+| Tool | License | Commercial? | Notes |
+|---|---|---|---|
+| **Microsoft TRELLIS** | MIT | ✅ | cleanest geometry; current open SOTA |
+| **Hunyuan3D 2.0 / 2.1** | Tencent Community | ✅ *(you own the mesh)* | best auto-texturing; ⚠️ license **void in EU/UK/South Korea**, <1M MAU |
+| **TripoSR** | MIT | ✅ | fastest single-image → mesh |
+| **InstantMesh** | Apache-2.0 | ✅ | multi-view → clean mesh |
+| **Stable Fast 3D** | Stability Community | ✅ *(<$1M rev)* | quick textured mesh |
+| ~~Stable Zero123~~ | NC research | ❌ | non-commercial |
+| ~~Meshy / Tripo / Rodin~~ *(free tiers)* | CC-BY-NC TOS | ❌ | free **web** outputs are non-commercial |
+
+**Pick:** **TRELLIS** for geometry, **Hunyuan3D** for textured props (mind the region
+clause). Avoid the free web apps — their free-tier outputs are non-commercial.
+
+> 🍎 **Apple Silicon:** run all of the above in **ComfyUI** via Metal/MPS; a 16 GB+ Mac
+> handles TRELLIS / BiRefNet / RVM locally. Offload heavier 3D to **Kaggle**'s free T4
+> on an 8 GB machine.
+
+---
+
+## 5. The $0 finishing pipelines
 
 Three end-to-end recipes, every step commercial-clean:
 

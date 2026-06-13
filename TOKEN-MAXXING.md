@@ -239,6 +239,29 @@ The whole stack is glued by the **OpenAI Chat Completions schema** — change on
 **Tiered fallback chain (cheapest-first):** local model → free hosted tier
 (Groq/Gemini/Cerebras) → OpenRouter `:free` → small paid model as last resort.
 
+### 7.1 Add a gateway, tracing & tools (all $0)
+
+Once a hub is routing your tokens, three cheap upgrades make the stack production-grade:
+
+- **AI gateways** (caching, retries, budgets, analytics in front of *any* provider):
+  **Cloudflare AI Gateway** (managed, free — caching/rate-limit/logging/fallback; free
+  plan keeps 100k logs, 10 gateways, and BYOK avoids markup), or self-host **LiteLLM** /
+  **Bifrost** (Apache/MIT) for virtual keys + spend caps. **Portkey** & **Helicone** ship
+  OSS gateways too.
+- **Observability / evals** (see *where* tokens go, catch regressions): 🥇 **Langfuse**
+  (MIT — self-host, or 50k-units/mo free cloud) for traces, cost, prompt management and
+  LLM-as-judge; lighter options are **Helicone** (Apache, 10k req/mo free), **Arize
+  Phoenix** (local OTel) and **OpenLLMetry** (Apache, export to any OTel backend).
+- **MCP (Model Context Protocol)** — the open "USB-C for AI": one tool server (files, DBs,
+  APIs, search) plugs into Claude, Copilot, Cline, Cursor. Find free servers in the
+  official **modelcontextprotocol/servers** repo, the **GitHub MCP Registry**,
+  **Smithery**, **mcp.so**, or the **Docker MCP Catalog** (300+ containerized — safest).
+  ⚠️ Only attach **trusted** servers with least-privilege tokens — a malicious MCP server
+  is a prompt-injection / secret-exfil vector.
+
+**$0 glue pick:** `LiteLLM (route) + Langfuse self-host (trace) + Docker MCP Toolkit
+(tools)`, plus **n8n** (self-host) or **Dify** (OSS) for visual automation / RAG.
+
 ---
 
 ## 8. Quota-stretching: caching & batching

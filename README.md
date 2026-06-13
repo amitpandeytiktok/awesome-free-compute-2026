@@ -30,6 +30,7 @@ This was compiled from a multi-model research sweep of official pricing/docs pag
 - [4. Hosted model APIs — image / video / utilities](#4-hosted-model-apis--image--video--utilities)
 - [5. Free LLM APIs](#5-free-llm-apis)
 - [6. Trial credits & student / startup programs](#6-trial-credits--student--startup-programs)
+- [7. Free fine-tuning & training](#7-free-fine-tuning--training)
 - [Corrections & caveats](#corrections--caveats)
 - [Sources](#sources)
 - [Contributing](#contributing)
@@ -125,6 +126,43 @@ This was compiled from a multi-model research sweep of official pricing/docs pag
 | **Google for Startups** | up to **$200k** ($350k for AI startups) | startup eligibility |
 | **AWS Activate** | **$5k–$100k** | startup via Activate provider |
 | **Google TPU Research Cloud** | free TPU v2–v5 | apply with a research note |
+
+---
+
+---
+
+## 7. Free fine-tuning & training
+
+You don't need a rented A100 to fine-tune. In 2026 the real $0 path is **LoRA / QLoRA on
+free notebook GPUs** — a 7–8B adapter or an SDXL LoRA trains fine on a free T4. Hosted
+"free fine-tune" offers have mostly dried up; the genuine free compute is the notebooks below.
+
+**Free training venues**
+
+| Venue | Hardware | Free quota | Trains |
+|---|---|---|---|
+| **Kaggle Notebooks** | T4×2 / P100 | ~30 GPU-h/week | 7–8B QLoRA, SDXL LoRA |
+| **Google Colab** (free) | T4-class (not guaranteed) | variable, disconnects | 7–8B QLoRA, SDXL LoRA |
+| **Google TPU Research Cloud** | Cloud TPU v2–v5 | free quota after rolling approval | bigger JAX/TPU jobs — the only "large free" path |
+| **HF Spaces ZeroGPU** | shared big GPU | ~5 min/day | demos/inference, **not** training |
+| **Predibase trial** | hosted serverless | $25 credits / 30 days | small hosted LoRA jobs |
+
+**Trainers (all run on a single free GPU)**
+
+- 🥇 **Unsloth** (Apache-2.0) — 2× faster, up to ~70% less VRAM; ships ready-made free
+  Colab/Kaggle notebooks. Best beginner → 7–8B QLoRA path.
+- **Axolotl** / **LLaMA-Factory** (Apache-2.0) — YAML/GUI SFT·DPO·GRPO across many models.
+- **HF PEFT + TRL** (Apache-2.0) — the LoRA/QLoRA + SFT/DPO libraries everything builds on.
+- **Images:** **kohya_ss** (SDXL LoRA/DreamBooth), **ai-toolkit** / **SimpleTuner** (FLUX/SDXL).
+
+> ⚠️ **The base-model license carries forward.** A LoRA on a non-commercial base is still
+> non-commercial. Safe commercial bases: **Qwen3** · **Mistral-7B** · **FLUX.1-schnell**
+> (Apache-2.0). Custom terms: **Llama 3.x** (Meta Community + AUP), **Gemma** (Google
+> terms), **SDXL** (RAIL++ use restrictions). ❌ **FLUX.1-dev** is non-commercial.
+
+**Mostly gone:** OpenAI fine-tuning is winding down (closed to new users); Cohere
+deprecated it (Sept 2025); Gemini API / AI Studio offers no tuning; Together/Fireworks are
+pay-as-you-go. **Predibase's $25 / 30-day trial** is the clearest remaining hosted credit.
 
 ---
 
