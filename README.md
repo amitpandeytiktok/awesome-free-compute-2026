@@ -7,11 +7,14 @@
 This was compiled from a multi-model research sweep of official pricing/docs pages (not blog hearsay), with conflicts resolved against primary sources.
 
 > [!TIP]
-> **👉 New: [The Free Token-Maxxing Guide](./TOKEN-MAXXING.md)** — a deeper playbook on
-> getting maximum frontier-model usage for $0: free LLM APIs, free coding tools,
-> the BYO-key trick, orchestration with LiteLLM/OpenRouter, quota-stretching, and a
-> full **🇨🇳 China section** (how "100M tokens for ~$1" works, cheap coding plans,
-> and free **image/video** generation for creators).
+> **👉 Companion guides:**
+> - **[The Free Token-Maxxing Guide](./TOKEN-MAXXING.md)** — maximum frontier-model
+>   usage for $0: free LLM APIs, free coding tools, the BYO-key trick, LiteLLM/OpenRouter
+>   orchestration, quota-stretching, and a full **🇨🇳 China section** ("100M tokens for
+>   ~$1", cheap coding plans, free image/video generation).
+> - **[The Free Audio Generation Guide](./AUDIO.md)** 🎙️ — free **music, voice (TTS +
+>   cloning), and transcription** for creators, with a hard focus on **commercial
+>   licensing** (which "free" tools you can actually monetize).
 
 ---
 

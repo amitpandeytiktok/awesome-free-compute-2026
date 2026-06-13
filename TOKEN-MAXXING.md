@@ -16,6 +16,11 @@ list; where a provider hides exact caps behind a login or a JS page, it's flagge
 > everyone**. The sustainable move is *aggregating many legit sources*, not
 > *cheating one source many times*. See [§9](#9-legit-vs-risky).
 
+> [!TIP]
+> Making media, not just text? See the companion **[Free Audio Generation
+> Guide](./AUDIO.md)** 🎙️ — free music, voice (TTS + cloning), and transcription,
+> with a hard focus on which "free" tools you can actually **monetize**.
+
 ---
 
 ## Contents
@@ -430,6 +435,10 @@ ComfyUI or Diffusers.
    clips to cut to a beat.
 3. **Kling / Hailuo** free apps — fast drafts & storyboards (watermarked).
 4. **Cheapest paid fallback:** Zhipu **CogVideoX-3 API ~$0.20/video** (4K/60fps/audio).
+
+> 🎙️ **Need the *soundtrack* too?** Video is only half a music video — see the
+> companion **[Free Audio Generation Guide](./AUDIO.md)** for free, commercially-clean
+> **music** (ACE-Step), **voice/TTS**, and **lyric-timing/transcription** (WhisperX).
 
 ⚠️ **"CogVideoX-Flash free"** is **not confirmed for 2026** — there's no free video
 model on international Z.ai (CogVideoX-3 is paid). The free Flash video tier was a
