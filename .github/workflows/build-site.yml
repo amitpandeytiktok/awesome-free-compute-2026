@@ -59,7 +59,6 @@ jobs:
           app_location: dist
           output_location: ""
           skip_app_build: true
-          skip_api_build: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
