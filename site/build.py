@@ -169,6 +169,15 @@ def load_news() -> dict:
     return data
 
 
+def load_ticker() -> list:
+    """Headlines for the always-on ticker (AI/tech/crypto)."""
+    try:
+        data = json.loads((DATA / "ticker.json").read_text(encoding="utf-8"))
+        return data.get("items", [])[:30]
+    except Exception:
+        return []
+
+
 def main() -> int:
     env = Environment(loader=FileSystemLoader(str(TPL)),
                       autoescape=select_autoescape(["html"]))
@@ -188,6 +197,7 @@ def main() -> int:
     news = load_news()
     nav = [{"slug": g["slug"], "title": g["title"], "emoji": g["emoji"]} for g in GUIDES]
     ctx_base = {"site": SITE, "nav": nav, "news_updated": rel_time(news.get("updated", "")),
+                "ticker": load_ticker(),
                 "build_time": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}
 
     # guide pages

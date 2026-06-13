@@ -9,9 +9,10 @@
   --radius:14px; --radius-lg:20px; --maxw:1180px;
   --shadow:0 10px 40px -12px rgba(0,0,0,.6);
   --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ticker-h:36px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + var(--ticker-h))}
 body{
   margin:0;background:var(--bg);color:var(--text);
   font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
@@ -29,7 +30,7 @@ h1,h2,h3,h4{line-height:1.2;font-weight:800;letter-spacing:-.02em}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;color:var(--accent-2);text-transform:uppercase;letter-spacing:.08em}
 
 /* ===== top bar ===== */
-.topbar{position:sticky;top:0;z-index:50;background:rgba(11,14,20,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.topbar{position:sticky;top:var(--ticker-h);z-index:50;background:rgba(11,14,20,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
 .topbar-inner{display:flex;align-items:center;justify-content:space-between;height:62px;gap:18px}
 .brand{display:flex;align-items:center;gap:9px;font-weight:800;color:var(--text)}
 .brand:hover{text-decoration:none}
@@ -104,7 +105,7 @@ h1,h2,h3,h4{line-height:1.2;font-weight:800;letter-spacing:-.02em}
 /* ===== guide page ===== */
 .guide-shell{display:grid;grid-template-columns:250px 1fr;gap:42px;padding:34px 22px 60px}
 .guide-toc{position:relative}
-.toc-inner{position:sticky;top:82px;max-height:calc(100vh-100px);overflow:auto}
+.toc-inner{position:sticky;top:calc(82px + var(--ticker-h));max-height:calc(100vh-100px);overflow:auto}
 .toc-back{font-size:.82rem;font-weight:600;color:var(--muted)}
 .toc-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--subtle);margin:18px 0 8px}
 .toc-nav{display:flex;flex-direction:column;border-left:1px solid var(--border)}
@@ -202,3 +203,32 @@ h1,h2,h3,h4{line-height:1.2;font-weight:800;letter-spacing:-.02em}
   .hero-stats{gap:20px}
   .hero{padding:40px 0 20px}
 }
+
+/* ===== always-on live ticker ===== */
+.ticker{position:sticky;top:0;z-index:60;display:flex;align-items:center;height:var(--ticker-h);
+  background:linear-gradient(90deg,#0a0d13,#10141d);border-bottom:1px solid var(--border);
+  font-size:.82rem;overflow:hidden}
+.ticker-tag{display:flex;align-items:center;gap:7px;flex:0 0 auto;height:100%;padding:0 14px;
+  font-weight:800;letter-spacing:.07em;font-size:.7rem;color:var(--accent-2);text-transform:uppercase;
+  background:rgba(67,217,173,.08);border-right:1px solid var(--border);z-index:2}
+.ticker-viewport{position:relative;flex:1 1 auto;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 42px),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 42px),transparent)}
+.ticker-track{display:inline-flex;align-items:center;white-space:nowrap;will-change:transform;
+  animation:ticker-scroll 80s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-group{display:inline-flex;align-items:center}
+.ti{display:inline-flex;align-items:center;gap:7px;color:var(--muted);padding:0 18px;height:var(--ticker-h);
+  border-right:1px solid rgba(255,255,255,.045)}
+.ti:hover{color:var(--text);text-decoration:none;background:rgba(255,255,255,.03)}
+.ti-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:0 0 auto}
+.ti-ai .ti-dot{background:var(--accent)}
+.ti-tech .ti-dot{background:var(--accent-2)}
+.ti-crypto .ti-dot{background:var(--warn)}
+.ti-px{font-family:var(--mono);font-weight:600;color:var(--text);gap:6px}
+.ti-px .sym{color:var(--accent-3);font-weight:700}
+.ti-px .chg{font-size:.74rem}
+.ti-px .chg.up{color:var(--ok)} .ti-px .chg.down{color:var(--danger)}
+@keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}.ticker-viewport{overflow-x:auto}}
+@media (max-width:560px){.ticker-tag{padding:0 10px}.ti{padding:0 13px}}

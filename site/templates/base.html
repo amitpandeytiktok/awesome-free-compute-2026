@@ -18,6 +18,17 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+{% if ticker %}
+<div class="ticker" id="ticker" aria-label="Live AI, tech and crypto headlines">
+  <span class="ticker-tag"><span class="live-dot"></span>LIVE</span>
+  <div class="ticker-viewport">
+    <div class="ticker-track">
+      <span class="ticker-group">{% for t in ticker %}<a class="ti ti-{{ t.cat }}" href="{{ t.url }}" target="_blank" rel="noopener"><i class="ti-dot"></i>{{ t.title }}</a>{% endfor %}</span>
+      <span class="ticker-group" aria-hidden="true">{% for t in ticker %}<a class="ti ti-{{ t.cat }}" href="{{ t.url }}" target="_blank" rel="noopener" tabindex="-1"><i class="ti-dot"></i>{{ t.title }}</a>{% endfor %}</span>
+    </div>
+  </div>
+</div>
+{% endif %}
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="index.html"><span class="brand-mark">⚡</span><span class="brand-name">Awesome&nbsp;Free&nbsp;Compute</span></a>

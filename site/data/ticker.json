@@ -1,0 +1,285 @@
+{
+  "updated": "2026-06-13T23:37:49Z",
+  "items": [
+    {
+      "title": "AI coding at home without going broke",
+      "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-13T16:45:03Z"
+    },
+    {
+      "title": "US Government Orders Anthropic to Pull Claude Fable, Mythos AI Models",
+      "url": "https://decrypt.co/371027/us-government-orders-anthropic-pull-claude-fable-mythos-ai-models",
+      "source": "Decrypt",
+      "cat": "crypto",
+      "ts": "2026-06-13T19:23:34Z"
+    },
+    {
+      "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
+      "url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T19:54:55Z"
+    },
+    {
+      "title": "Arch Linux Now Believes Malware Incident Under Control: More Than 1,500 Packages",
+      "url": "https://www.phoronix.com/news/Arch-Linux-AUR-More-Than-1500",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-13T11:55:30Z"
+    },
+    {
+      "title": "Google Sues Chinese Crime Group for Allegedly Using Gemini AI for Mass Phishing Scams",
+      "url": "https://decrypt.co/371014/google-sues-chinese-crime-group-gemini-ai-phishing-scams",
+      "source": "Decrypt",
+      "cat": "crypto",
+      "ts": "2026-06-13T16:01:04Z"
+    },
+    {
+      "title": "GameBoy Workboy",
+      "url": "https://tcrf.net/Workboy",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T17:43:02Z"
+    },
+    {
+      "title": "RTX 5080 and RTX 3090 Setup: 80 Tok/s on Qwen 3.6 27B Q8",
+      "url": "https://imil.net/blog/posts/2026/rtx-5080-+-rtx-3090-setup-80+-tok-s-on-qwen-3.6-27b-q8/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-13T09:55:32Z"
+    },
+    {
+      "title": "Anthropic's Mythos AI finds no more 'serious' bugs in Zcash: Wilcox",
+      "url": "https://cointelegraph.com/news/anthropic-mythos-audit-no-serious-bugs-zcash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T14:45:43Z"
+    },
+    {
+      "title": "Amazon security research reportedly led to the White House’s Anthropic Fable ban",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+      "source": "The Verge",
+      "cat": "tech",
+      "ts": "2026-06-13T17:39:26-04:00"
+    },
+    {
+      "title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
+      "url": "https://github.com/Paca-AI/paca",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-13T09:44:25Z"
+    },
+    {
+      "title": "Bitcoin sales are necessary for Strategy's digital credit business, Saylor says",
+      "url": "https://cointelegraph.com/news/saylor-strategys-bitcoin-sale-defend-digital-credit-products?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T13:58:24Z"
+    },
+    {
+      "title": "Review: Disclosure Day is big on action, light on ideas",
+      "url": "https://arstechnica.com/culture/2026/06/review-disclosure-day-is-big-on-action-light-on-ideas/",
+      "source": "Ars Technica",
+      "cat": "tech",
+      "ts": "2026-06-13T17:17:44Z"
+    },
+    {
+      "title": "Open source AI must win",
+      "url": "https://opensourceaimustwin.com/?share=v2",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-13T02:14:24Z"
+    },
+    {
+      "title": "AI Agent Rekts Dev on Bogus Scan, Leaves Them Begging for Crypto Donations",
+      "url": "https://decrypt.co/370988/ai-agent-rekts-dev-bogus-scan-crypto-donations",
+      "source": "Decrypt",
+      "cat": "crypto",
+      "ts": "2026-06-13T13:01:06Z"
+    },
+    {
+      "title": "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models",
+      "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T16:57:49Z"
+    },
+    {
+      "title": "Twenty One Zero-Days in FFmpeg",
+      "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-12T22:13:29Z"
+    },
+    {
+      "title": "Morpho's $175M raise shows where crypto VC money is flowing",
+      "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T11:52:41Z"
+    },
+    {
+      "title": "The adder at the heart of Intel's 8087 floating-point chip",
+      "url": "https://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T16:49:42Z"
+    },
+    {
+      "title": "Launch HN: BitBoard (YC P25) – Analytics Workspace for Agents",
+      "url": "https://bitboard.work/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-12T16:58:03Z"
+    },
+    {
+      "title": "Here’s what happened in crypto today",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T05:47:00Z"
+    },
+    {
+      "title": "GLM 5.2 Is Out",
+      "url": "https://twitter.com/jietang/status/2065784751345287314",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T16:18:31Z"
+    },
+    {
+      "title": "Show HN: StackScope – I crawled over 40k indie launches to see what they ship",
+      "url": "https://stackscope.dev/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-12T15:26:12Z"
+    },
+    {
+      "title": "ETH futures flash bearish signal, but stakers’ resilience points to underlying strength",
+      "url": "https://cointelegraph.com/markets/eth-futures-flash-bearish-signal-but-stakers-resilience-points-to-underlying-strength?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T03:24:05Z"
+    },
+    {
+      "title": "Sealed Super Mario Bros. sells for a record $3 million",
+      "url": "https://www.theverge.com/games/949593/super-mario-bros-3-million-auction",
+      "source": "The Verge",
+      "cat": "tech",
+      "ts": "2026-06-13T14:37:21-04:00"
+    },
+    {
+      "title": "WhatsApp Business API pricing 2026: what's free and where markup hides",
+      "url": "https://wexio.io/blog/free-whatsapp-business-api",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-12T14:37:30Z"
+    },
+    {
+      "title": "Anthropic suspends access to Fable 5, Mythos 5, citing US directive",
+      "url": "https://cointelegraph.com/news/anthropic-suspends-access-to-fable-mythos-citing-us-directive?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T02:37:40Z"
+    },
+    {
+      "title": "Noise infusion banned from statistical products published by Census Bureau",
+      "url": "https://desfontain.es/blog/banning-noise.html",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T13:54:56Z"
+    },
+    {
+      "title": "AI agent bankrupted their operator while trying to scan DN42",
+      "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-12T04:42:53Z"
+    },
+    {
+      "title": "Major crypto exchanges cancel SpaceX IPO allocations, promising refunds",
+      "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T02:17:55Z"
+    },
+    {
+      "title": "Treating pancreatic tumours may have revealed cancer's master switch",
+      "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T13:34:00Z"
+    },
+    {
+      "title": "Open Reproduction of DeepSeek-R1",
+      "url": "https://github.com/huggingface/open-r1",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-11T13:14:31Z"
+    },
+    {
+      "title": "Bitcoin’s ‘calm top’ challenges most market bottom estimates: Research",
+      "url": "https://cointelegraph.com/markets/bitcoins-calm-top-challenges-old-bottom-targets-what-traders-need-to-know?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-13T00:51:36Z"
+    },
+    {
+      "title": "The experience of rendering Arabic typography and its technical debt",
+      "url": "https://lr0.org/blog/p/arabic/",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T12:40:16Z"
+    },
+    {
+      "title": "The AI Agent in the Billing Department of Verizon Is a Mentally Handicapped Thug",
+      "url": "https://samhenrycliff.medium.com/the-ai-agent-in-the-billing-department-of-verizon-wireless-is-a-mentally-handicapped-thug-99890a389ff5",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-11T12:19:17Z"
+    },
+    {
+      "title": "Bitcoin rally to $70K builds as orderbook structure highlights traders’ confidence",
+      "url": "https://cointelegraph.com/markets/bitcoin-data-points-to-a-relief-rally-as-order-book-demand-targets-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "source": "Cointelegraph",
+      "cat": "crypto",
+      "ts": "2026-06-12T23:42:12Z"
+    },
+    {
+      "title": "Microsoft hasn’t ruled out spinning off Xbox",
+      "url": "https://www.theverge.com/games/949584/microsoft-spinning-off-xbox",
+      "source": "The Verge",
+      "cat": "tech",
+      "ts": "2026-06-13T12:29:47-04:00"
+    },
+    {
+      "title": "AI agent runs amok in Fedora and elsewhere",
+      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-11T00:10:08Z"
+    },
+    {
+      "title": "How Crypto Firms Will Own the Octagon at Trump's White House UFC Event",
+      "url": "https://decrypt.co/370974/how-crypto-firms-own-octagon-trump-white-house-ufc-event",
+      "source": "Decrypt",
+      "cat": "crypto",
+      "ts": "2026-06-12T19:56:26Z"
+    },
+    {
+      "title": "AI OSS tool repo goes archived over night after raising $7.3M Seed",
+      "url": "https://github.com/tensorzero/tensorzero",
+      "source": "Hacker News",
+      "cat": "tech",
+      "ts": "2026-06-13T12:10:47Z"
+    },
+    {
+      "title": "Show HN: I am building a map of people who lived in the Roman Empire",
+      "url": "https://new.roman-names.com/",
+      "source": "Hacker News",
+      "cat": "ai",
+      "ts": "2026-06-10T19:28:49Z"
+    }
+  ]
+}

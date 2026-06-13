@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T06:59:45Z",
+  "updated": "2026-06-13T23:37:41Z",
   "count": 120,
   "items": [
     {
@@ -10,9 +10,66 @@
       "repo": "facebookresearch/demucs",
       "cat": "Audio",
       "blurb": "SOTA open stem separation (MIT)",
-      "ts": "2026-06-13T06:42:30Z",
+      "ts": "2026-06-13T23:37:38Z",
       "kind": "release",
       "first_seen": "2026-06-13T06:59:45Z"
+    },
+    {
+      "id": "gh-ggml-org/llama.cpp-b9627",
+      "title": "llama.cpp b9627",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9627",
+      "source": "GitHub",
+      "repo": "ggml-org/llama.cpp",
+      "cat": "Local LLM",
+      "blurb": "CPU/Metal inference for GGUF models",
+      "ts": "2026-06-13T23:25:28Z",
+      "kind": "release",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
+      "id": "hn-48516379",
+      "title": "Arch Linux Now Believes Malware Incident Under Control: More Than 1,500 Packages",
+      "url": "https://www.phoronix.com/news/Arch-Linux-AUR-More-Than-1500",
+      "source": "Hacker News",
+      "points": 275,
+      "comments_url": "https://news.ycombinator.com/item?id=48516379",
+      "ts": "2026-06-13T11:55:30Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
+      "id": "hn-48515454",
+      "title": "RTX 5080 and RTX 3090 Setup: 80 Tok/s on Qwen 3.6 27B Q8",
+      "url": "https://imil.net/blog/posts/2026/rtx-5080-+-rtx-3090-setup-80+-tok-s-on-qwen-3.6-27b-q8/",
+      "source": "Hacker News",
+      "points": 178,
+      "comments_url": "https://news.ycombinator.com/item?id=48515454",
+      "ts": "2026-06-13T09:55:32Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
+      "id": "hn-48515385",
+      "title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
+      "url": "https://github.com/Paca-AI/paca",
+      "source": "Hacker News",
+      "points": 129,
+      "comments_url": "https://news.ycombinator.com/item?id=48515385",
+      "ts": "2026-06-13T09:44:25Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
+      "id": "gh-vllm-project/vllm-v0.23.0",
+      "title": "vLLM v0.23.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.23.0",
+      "source": "GitHub",
+      "repo": "vllm-project/vllm",
+      "cat": "Local LLM",
+      "blurb": "High-throughput open inference server",
+      "ts": "2026-06-12T23:29:26Z",
+      "kind": "release",
+      "first_seen": "2026-06-13T23:35:09Z"
     },
     {
       "id": "gh-ggml-org/llama.cpp-b9616",
@@ -31,7 +88,7 @@
       "title": "Twenty One Zero-Days in FFmpeg",
       "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
       "source": "Hacker News",
-      "points": 169,
+      "points": 276,
       "comments_url": "https://news.ycombinator.com/item?id=48510046",
       "ts": "2026-06-12T22:13:29Z",
       "kind": "story",
@@ -54,7 +111,7 @@
       "title": "Show HN: StackScope – I crawled over 40k indie launches to see what they ship",
       "url": "https://stackscope.dev/",
       "source": "Hacker News",
-      "points": 52,
+      "points": 61,
       "comments_url": "https://news.ycombinator.com/item?id=48505364",
       "ts": "2026-06-12T15:26:12Z",
       "kind": "story",
@@ -65,7 +122,7 @@
       "title": "WhatsApp Business API pricing 2026: what's free and where markup hides",
       "url": "https://wexio.io/blog/free-whatsapp-business-api",
       "source": "Hacker News",
-      "points": 27,
+      "points": 28,
       "comments_url": "https://news.ycombinator.com/item?id=48504753",
       "ts": "2026-06-12T14:37:30Z",
       "kind": "story",
@@ -84,6 +141,18 @@
       "first_seen": "2026-06-13T06:59:45Z"
     },
     {
+      "id": "gh-unslothai/unsloth-v0.1.464-beta",
+      "title": "Unsloth v0.1.464-beta",
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.464-beta",
+      "source": "GitHub",
+      "repo": "unslothai/unsloth",
+      "cat": "Fine-tuning",
+      "blurb": "2× faster QLoRA on a free T4",
+      "ts": "2026-06-12T13:57:31Z",
+      "kind": "release",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
       "id": "gh-langfuse/langfuse-v3.185.0",
       "title": "Langfuse v3.185.0",
       "url": "https://github.com/langfuse/langfuse/releases/tag/v3.185.0",
@@ -100,18 +169,29 @@
       "title": "Open Reproduction of DeepSeek-R1",
       "url": "https://github.com/huggingface/open-r1",
       "source": "Hacker News",
-      "points": 242,
+      "points": 244,
       "comments_url": "https://news.ycombinator.com/item?id=48489917",
       "ts": "2026-06-11T13:14:31Z",
       "kind": "story",
       "first_seen": "2026-06-13T06:59:45Z"
     },
     {
+      "id": "hn-48481400",
+      "title": "Show HN: I am building a map of people who lived in the Roman Empire",
+      "url": "https://new.roman-names.com/",
+      "source": "Hacker News",
+      "points": 143,
+      "comments_url": "https://news.ycombinator.com/item?id=48481400",
+      "ts": "2026-06-10T19:28:49Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
       "id": "hn-48478148",
       "title": "Show HN: HelixDB – A graph database built on object storage",
       "url": "https://github.com/HelixDB/helix-db/tree/main",
       "source": "Hacker News",
-      "points": 153,
+      "points": 155,
       "comments_url": "https://news.ycombinator.com/item?id=48478148",
       "ts": "2026-06-10T15:47:31Z",
       "kind": "story",
@@ -122,7 +202,7 @@
       "title": "Notes on DeepSeek",
       "url": "https://news.ycombinator.com/item?id=48476474",
       "source": "Hacker News",
-      "points": 204,
+      "points": 206,
       "comments_url": "https://news.ycombinator.com/item?id=48476474",
       "ts": "2026-06-10T14:03:40Z",
       "kind": "story",
@@ -139,6 +219,17 @@
       "ts": "2026-06-10T09:00:17Z",
       "kind": "release",
       "first_seen": "2026-06-13T06:59:45Z"
+    },
+    {
+      "id": "hn-48469039",
+      "title": "Show HN: Nucleus – A security-hardened, Nix-native container runtime",
+      "url": "https://github.com/sig-id/nucleus",
+      "source": "Hacker News",
+      "points": 40,
+      "comments_url": "https://news.ycombinator.com/item?id=48469039",
+      "ts": "2026-06-09T23:03:40Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
     },
     {
       "id": "hn-48467865",
@@ -201,7 +292,7 @@
       "title": "Show HN: Command Center, the AI coding env for people who care about quality",
       "url": "https://www.cc.dev/",
       "source": "Hacker News",
-      "points": 67,
+      "points": 68,
       "comments_url": "https://news.ycombinator.com/item?id=48453002",
       "ts": "2026-06-08T22:10:18Z",
       "kind": "story",
@@ -278,7 +369,7 @@
       "title": "Launch HN: General Instinct (YC P26) – Frontier models on edge devices",
       "url": "https://news.ycombinator.com/item?id=48414869",
       "source": "Hacker News",
-      "points": 62,
+      "points": 63,
       "comments_url": "https://news.ycombinator.com/item?id=48414869",
       "ts": "2026-06-05T16:33:00Z",
       "kind": "story",
@@ -334,7 +425,7 @@
       "title": "Ask HN: What was your \"oh shit\" moment with GenAI?",
       "url": "https://news.ycombinator.com/item?id=48406174",
       "source": "Hacker News",
-      "points": 736,
+      "points": 737,
       "comments_url": "https://news.ycombinator.com/item?id=48406174",
       "ts": "2026-06-04T23:42:20Z",
       "kind": "story",
@@ -538,6 +629,17 @@
       "ts": "2026-05-27T04:26:26Z",
       "kind": "story",
       "first_seen": "2026-06-13T06:59:45Z"
+    },
+    {
+      "id": "hn-48284939",
+      "title": "DeepSWE: A contamination-free benchmark for long-horizon coding agents",
+      "url": "https://deepswe.datacurve.ai/blog",
+      "source": "Hacker News",
+      "points": 67,
+      "comments_url": "https://news.ycombinator.com/item?id=48284939",
+      "ts": "2026-05-26T19:40:59Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
     },
     {
       "id": "hn-48272393",
@@ -1058,6 +1160,17 @@
       "first_seen": "2026-06-13T06:59:45Z"
     },
     {
+      "id": "hn-47494696",
+      "title": "LLMs learn what programmers create, not how programmers work",
+      "url": "https://news.ycombinator.com/item?id=47494696",
+      "source": "Hacker News",
+      "points": 41,
+      "comments_url": "https://news.ycombinator.com/item?id=47494696",
+      "ts": "2026-03-23T20:31:48Z",
+      "kind": "story",
+      "first_seen": "2026-06-13T23:35:09Z"
+    },
+    {
       "id": "hn-47441546",
       "title": "Show HN: Three new Kitten TTS models – smallest less than 25MB",
       "url": "https://github.com/KittenML/KittenTTS",
@@ -1219,116 +1332,6 @@
       "points": 495,
       "comments_url": "https://news.ycombinator.com/item?id=47322887",
       "ts": "2026-03-10T13:18:55Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47322794",
-      "title": "SHOW HN: A usage circuit breaker for Cloudflare Workers",
-      "url": "https://news.ycombinator.com/item?id=47322794",
-      "source": "Hacker News",
-      "points": 29,
-      "comments_url": "https://news.ycombinator.com/item?id=47322794",
-      "ts": "2026-03-10T13:09:00Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47309953",
-      "title": "Show HN: DenchClaw – Local CRM on Top of OpenClaw",
-      "url": "https://github.com/DenchHQ/DenchClaw",
-      "source": "Hacker News",
-      "points": 147,
-      "comments_url": "https://news.ycombinator.com/item?id=47309953",
-      "ts": "2026-03-09T14:55:42Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47276539",
-      "title": "Entomologists use a particle accelerator to image ants at scale",
-      "url": "https://spectrum.ieee.org/3d-scanning-particle-accelerator-antscan",
-      "source": "Hacker News",
-      "points": 145,
-      "comments_url": "https://news.ycombinator.com/item?id=47276539",
-      "ts": "2026-03-06T15:53:32Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47232903",
-      "title": "Launch HN: Cekura (YC F24) – Testing and monitoring for voice and chat AI agents",
-      "url": "https://news.ycombinator.com/item?id=47232903",
-      "source": "Hacker News",
-      "points": 89,
-      "comments_url": "https://news.ycombinator.com/item?id=47232903",
-      "ts": "2026-03-03T14:30:58Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47164079",
-      "title": "Show HN: Better Hub – A better GitHub experience",
-      "url": "https://www.better-hub.com/",
-      "source": "Hacker News",
-      "points": 38,
-      "comments_url": "https://news.ycombinator.com/item?id=47164079",
-      "ts": "2026-02-26T10:08:01Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47160526",
-      "title": "Show HN: ZSE – Open-source LLM inference engine with 3.9s cold starts",
-      "url": "https://github.com/Zyora-Dev/zse",
-      "source": "Hacker News",
-      "points": 58,
-      "comments_url": "https://news.ycombinator.com/item?id=47160526",
-      "ts": "2026-02-26T01:15:25Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47151784",
-      "title": "Show HN: Clocksimulator.com – A minimalist, distraction-free analog clock",
-      "url": "https://www.clocksimulator.com/",
-      "source": "Hacker News",
-      "points": 131,
-      "comments_url": "https://news.ycombinator.com/item?id=47151784",
-      "ts": "2026-02-25T14:17:14Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47143755",
-      "title": "Show HN: Moonshine Open-Weights STT models – higher accuracy than WhisperLargev3",
-      "url": "https://github.com/moonshine-ai/moonshine",
-      "source": "Hacker News",
-      "points": 316,
-      "comments_url": "https://news.ycombinator.com/item?id=47143755",
-      "ts": "2026-02-24T21:54:07Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47128138",
-      "title": "“Car Wash” test with 53 models",
-      "url": "https://opper.ai/blog/car-wash-test",
-      "source": "Hacker News",
-      "points": 371,
-      "comments_url": "https://news.ycombinator.com/item?id=47128138",
-      "ts": "2026-02-23T20:16:08Z",
-      "kind": "story",
-      "first_seen": "2026-06-13T06:59:45Z"
-    },
-    {
-      "id": "hn-47116026",
-      "title": "Show HN: WARN Firehose – Every US layoff notice in one searchable database",
-      "url": "https://warnfirehose.com",
-      "source": "Hacker News",
-      "points": 134,
-      "comments_url": "https://news.ycombinator.com/item?id=47116026",
-      "ts": "2026-02-22T23:32:43Z",
       "kind": "story",
       "first_seen": "2026-06-13T06:59:45Z"
     }
