@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% set active = guide.slug %}
+{% block content %}
+<div class="guide-shell wrap">
+  <aside class="guide-toc">
+    <div class="toc-inner">
+      <a class="toc-back" href="index.html">← All guides</a>
+      <div class="toc-label">{{ guide.emoji }} On this page</div>
+      <nav class="toc-nav">
+        {% for h in toc %}
+        <a href="#{{ h.id }}" class="lvl{{ h.level }}">{{ h.text }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </aside>
+  <article class="guide-body markdown">
+    <div class="guide-breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>{{ guide.cat }}</span></div>
+    {{ body|safe }}
+    <hr>
+    <p class="muted edit-note">📝 Spotted a stale quota or a license that changed? This guide is open source — <a href="{{ site.repo }}/blob/main/{{ guide.file }}" target="_blank" rel="noopener">edit it on GitHub</a>.</p>
+  </article>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+// highlight the current section in the sidebar TOC
+(function(){
+  const links = [...document.querySelectorAll('.toc-nav a')];
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const heads = [...document.querySelectorAll('.markdown h2, .markdown h3')];
+  const obs = new IntersectionObserver((ents)=>{
+    ents.forEach(e=>{ if(e.isIntersecting){
+      links.forEach(a=>a.classList.remove('active'));
+      const a = map.get(e.target.id); if(a) a.classList.add('active');
+    }});
+  }, {rootMargin:'0px 0px -75% 0px', threshold:0});
+  heads.forEach(h=>{ if(h.id) obs.observe(h); });
+})();
+</script>
+{% endblock %}

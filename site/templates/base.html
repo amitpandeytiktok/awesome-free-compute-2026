@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ site.tagline }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ site.tagline }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pygments.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">⚡</span><span class="brand-name">Awesome&nbsp;Free&nbsp;Compute</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    <nav class="mainnav">
+      <a href="index.html"{% if active=='home' %} class="on"{% endif %}>Home</a>
+      {% for n in nav %}<a href="{{ n.slug }}.html"{% if active==n.slug %} class="on"{% endif %}>{{ n.emoji }} {{ n.title }}</a>{% endfor %}
+      <a href="news.html"{% if active=='news' %} class="on"{% endif %} class="news-link">📡 The Wire</a>
+      <a class="gh" href="{{ site.repo }}" target="_blank" rel="noopener">GitHub ★</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">⚡</span><span class="brand-name">Awesome Free Compute {{ site.year }}</span></div>
+      <p class="muted">{{ site.tagline }}</p>
+    </div>
+    <div class="footer-links">
+      {% for n in nav %}<a href="{{ n.slug }}.html">{{ n.title }}</a>{% endfor %}
+      <a href="news.html">The Wire</a>
+      <a href="{{ site.repo }}" target="_blank" rel="noopener">Source on GitHub</a>
+    </div>
+  </div>
+  <div class="wrap subtle">Built {{ build_time }} · static &amp; self-updating · all quotas are snapshots — verify before relying. <a href="{{ site.repo }}">Corrections welcome →</a></div>
+</footer>
+<script src="app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

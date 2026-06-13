@@ -1,0 +1,21 @@
+{
+  "_comment": "Curated free/open tools tracked for latest-release updates via GitHub API (keyless). repo = owner/name. Keep this list tight and high-signal.",
+  "tools": [
+    {"repo": "ace-step/ACE-Step", "name": "ACE-Step", "cat": "Audio", "blurb": "Open music gen with vocals (Apache-2.0)"},
+    {"repo": "unslothai/unsloth", "name": "Unsloth", "cat": "Fine-tuning", "blurb": "2\u00d7 faster QLoRA on a free T4"},
+    {"repo": "comfyanonymous/ComfyUI", "name": "ComfyUI", "cat": "Image/Video", "blurb": "Node-based gen-media workflow engine"},
+    {"repo": "BerriAI/litellm", "name": "LiteLLM", "cat": "LLM ops", "blurb": "One proxy for 100+ model providers"},
+    {"repo": "langfuse/langfuse", "name": "Langfuse", "cat": "LLM ops", "blurb": "Open LLM tracing, evals, prompt mgmt"},
+    {"repo": "ollama/ollama", "name": "Ollama", "cat": "Local LLM", "blurb": "Run open models locally, unmetered"},
+    {"repo": "ggml-org/llama.cpp", "name": "llama.cpp", "cat": "Local LLM", "blurb": "CPU/Metal inference for GGUF models"},
+    {"repo": "microsoft/TRELLIS", "name": "TRELLIS", "cat": "3D", "blurb": "Image\u2192 3D, MIT, clean geometry"},
+    {"repo": "facebookresearch/demucs", "name": "Demucs", "cat": "Audio", "blurb": "SOTA open stem separation (MIT)"},
+    {"repo": "openai/whisper", "name": "Whisper", "cat": "Audio", "blurb": "Open speech-to-text (MIT)"},
+    {"repo": "Stability-AI/stable-audio-tools", "name": "Stable Audio", "cat": "Audio", "blurb": "Open audio gen toolkit"},
+    {"repo": "xinntao/Real-ESRGAN", "name": "Real-ESRGAN", "cat": "Video", "blurb": "Upscaling (BSD-3), commercial-OK"},
+    {"repo": "modelcontextprotocol/servers", "name": "MCP Servers", "cat": "LLM ops", "blurb": "Official reference MCP tool servers"},
+    {"repo": "n8n-io/n8n", "name": "n8n", "cat": "Automation", "blurb": "Self-host workflow automation"},
+    {"repo": "langgenius/dify", "name": "Dify", "cat": "Automation", "blurb": "Open LLM app / RAG builder"},
+    {"repo": "vllm-project/vllm", "name": "vLLM", "cat": "Local LLM", "blurb": "High-throughput open inference server"}
+  ]
+}

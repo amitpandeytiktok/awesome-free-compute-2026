@@ -1,0 +1,59 @@
+name: Build & deploy site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.md"
+      - "site/**"
+      - ".github/workflows/build-site.yml"
+  schedule:
+    # refresh The Wire every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+# Allow the workflow to publish to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; let a running deploy finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: site/requirements.txt
+
+      - name: Install deps
+        run: pip install -r site/requirements.txt
+
+      - name: Refresh The Wire (keyless news + releases)
+        env:
+          # higher GitHub API rate limit for the releases fetch
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python site/news.py
+        continue-on-error: true
+
+      - name: Build static site
+        run: python site/build.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

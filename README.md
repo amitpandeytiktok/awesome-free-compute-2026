@@ -6,6 +6,9 @@
 
 This was compiled from a multi-model research sweep of official pricing/docs pages (not blog hearsay), with conflicts resolved against primary sources.
 
+> [!NOTE]
+> **🌐 Now also a website:** [**amitpandeytiktok.github.io/awesome-free-compute-2026**](https://amitpandeytiktok.github.io/awesome-free-compute-2026) — the same guides, beautifully rendered, plus **The Wire**: a self-updating feed of free-AI / token news + open-source releases (keyless, refreshed every few hours, $0 to host). New to all this? Start with the **[AI &amp; Tokens 101 primer](./PRIMER.md)**.
+
 > [!TIP]
 > **👉 Companion guides:**
 > - **[The Free Token-Maxxing Guide](./TOKEN-MAXXING.md)** — maximum frontier-model

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% set active = 'news' %}
+{% block content %}
+<section class="wrap news-head">
+  <span class="eyebrow"><span class="live-dot"></span> The Wire {% if news_updated %}· updated {{ news_updated }}{% endif %}</span>
+  <h1>All things free AI &amp; tokens — as it happens.</h1>
+  <p class="lede">{{ count }} signals from Hacker News and the open-source release feeds we track. Auto-refreshed every few hours. No algorithm, no ads — just what's new in $0 AI.</p>
+  <div class="news-controls">
+    <input id="news-search" type="search" placeholder="🔎 Search signals… (e.g. deepseek, gpu, tts)" autocomplete="off">
+    <div class="filters" id="filters">
+      <button class="chip on" data-kind="all">All</button>
+      <button class="chip" data-kind="story">📰 Stories</button>
+      <button class="chip" data-kind="release">🛠️ Releases</button>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <ul class="news-list" id="news-list">
+    {% for it in items %}
+    <li class="news-item" data-kind="{{ it.kind }}" data-text="{{ (it.title ~ ' ' ~ (it.cat or '') ~ ' ' ~ (it.blurb or '')) | lower }}">
+      <div class="ni-main">
+        <a class="ni-title" href="{{ it.url }}" target="_blank" rel="noopener">{{ it.title }}</a>
+        {% if it.blurb %}<p class="ni-blurb">{{ it.blurb }}</p>{% endif %}
+        <div class="ni-meta">
+          <span class="badge badge-{{ 'rel' if it.kind=='release' else 'hn' }}">{{ it.source }}</span>
+          {% if it.cat %}<span class="badge badge-cat">{{ it.cat }}</span>{% endif %}
+          {% if it.points %}<span class="muted">▲ {{ it.points }} points</span>{% endif %}
+          {% if it.kind=='story' %}<a class="muted ni-disc" href="{{ it.comments_url }}" target="_blank" rel="noopener">💬 discuss</a>{% endif %}
+          <span class="muted">{{ it.rel }}</span>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="news-empty" id="news-empty" hidden>No signals match that filter.</p>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+(function(){
+  const search = document.getElementById('news-search');
+  const items = [...document.querySelectorAll('.news-item')];
+  const empty = document.getElementById('news-empty');
+  let kind = 'all';
+  function apply(){
+    const q = (search.value || '').trim().toLowerCase();
+    let shown = 0;
+    items.forEach(li=>{
+      const okKind = kind==='all' || li.dataset.kind===kind;
+      const okText = !q || li.dataset.text.includes(q);
+      const vis = okKind && okText;
+      li.style.display = vis ? '' : 'none';
+      if(vis) shown++;
+    });
+    empty.hidden = shown>0;
+  }
+  search.addEventListener('input', apply);
+  document.getElementById('filters').addEventListener('click', e=>{
+    const b = e.target.closest('.chip'); if(!b) return;
+    document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
+    b.classList.add('on'); kind = b.dataset.kind; apply();
+  });
+})();
+</script>
+{% endblock %}

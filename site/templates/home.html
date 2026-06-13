@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% set active = 'home' %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">⚡ The $0 AI field guide · {{ site.year }}</span>
+      <h1>Build a studio-grade AI stack for <span class="grad">literally zero dollars</span>.</h1>
+      <p class="lede">Free compute, free tokens, free media generation, and the backend to ship it — researched with frontier models, reconciled against primary sources, and filtered hard on <strong>what you can actually monetize</strong>.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="primer.html">Start with the basics →</a>
+        <a class="btn btn-ghost" href="news.html">📡 Latest in The Wire</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>6</b><span>deep guides</span></div>
+        <div><b>{{ wire|length and '100+' or '—' }}</b><span>live signals</span></div>
+        <div><b>$0</b><span>the whole point</span></div>
+      </div>
+    </div>
+    <aside class="hero-wire" aria-label="Latest news">
+      <div class="hw-head"><span class="live-dot"></span> The Wire {% if news_updated %}<span class="muted">· {{ news_updated }}</span>{% endif %}</div>
+      <ul class="hw-list">
+        {% for it in wire[:7] %}
+        <li>
+          <a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.title }}</a>
+          <span class="hw-meta">
+            <span class="badge badge-{{ 'rel' if it.kind=='release' else 'hn' }}">{{ it.source }}</span>
+            {% if it.points %}<span class="muted">▲ {{ it.points }}</span>{% endif %}
+            <span class="muted">{{ it.rel }}</span>
+          </span>
+        </li>
+        {% endfor %}
+      </ul>
+      <a class="hw-all" href="news.html">See all signals →</a>
+    </aside>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head"><h2>The guides</h2><p class="muted">Evergreen, deeply-researched, and kept current.</p></div>
+  <div class="cards">
+    {% for g in guides %}
+    <a class="card" href="{{ g.slug }}.html">
+      <span class="card-cat">{{ g.cat }}</span>
+      <span class="card-emoji">{{ g.emoji }}</span>
+      <h3>{{ g.title }}</h3>
+      <p>{{ g.tagline }}</p>
+      <span class="card-go">Read the guide →</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% if releases %}
+<section class="wrap section">
+  <div class="section-head"><h2>🛠️ Fresh open-source releases</h2><p class="muted">Latest versions of the free tools we track.</p></div>
+  <div class="rel-grid">
+    {% for r in releases %}
+    <a class="rel" href="{{ r.url }}" target="_blank" rel="noopener">
+      <div class="rel-top"><span class="rel-cat">{{ r.cat }}</span><span class="muted">{{ r.rel }}</span></div>
+      <h4>{{ r.title }}</h4>
+      <p>{{ r.blurb }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="wrap section cta-band">
+  <div>
+    <h2>Why does this exist?</h2>
+    <p class="muted">Every year more of the AI stack falls to $0 — first tokens, then audio, then finishing, then the backend. What stays scarce is <em>trustworthy info on which free option is actually free, actually good, and actually safe to monetize.</em> That's this site.</p>
+  </div>
+  <a class="btn btn-primary" href="primer.html">Read AI &amp; Tokens 101 →</a>
+</section>
+{% endblock %}
