@@ -18,6 +18,9 @@ This was compiled from a multi-model research sweep of official pricing/docs pag
 > - **[The Free Media Post-Production Guide](./POST-PRODUCTION.md)** 🎬 — *finish* it for
 >   $0: **4K upscale, 60fps interpolation, stem separation, mastering/loudness,
 >   subtitles & dubbing** — again filtered hard on commercial licensing.
+> - **[The Free Ship-It Stack](./STACK.md)** 🚀 — the **backend** to deploy an AI app for
+>   $0: **databases, vector/RAG, embeddings, hosting, storage, auth** — with the 2026
+>   commercial-use traps flagged (Vercel Hobby, GitHub Pages, dead free tiers).
 
 ---
 

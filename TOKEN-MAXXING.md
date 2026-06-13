@@ -260,7 +260,9 @@ Once a hub is routing your tokens, three cheap upgrades make the stack productio
   is a prompt-injection / secret-exfil vector.
 
 **$0 glue pick:** `LiteLLM (route) + Langfuse self-host (trace) + Docker MCP Toolkit
-(tools)`, plus **n8n** (self-host) or **Dify** (OSS) for visual automation / RAG.
+(tools)`, plus **n8n** (self-host) or **Dify** (OSS) for visual automation / RAG. Need the
+**data + hosting** layer too? See the **[Free Ship-It Stack](./STACK.md)** 🚀 (DBs,
+vector/RAG, embeddings, hosting, storage, auth — all $0, commercial-use traps flagged).
 
 ---
 
