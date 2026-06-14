@@ -35,6 +35,7 @@
     <a class="brand" href="index.html"><span class="brand-mark">⚡</span><span class="brand-name">Awesome&nbsp;Free&nbsp;Compute</span></a>
     <button class="nav-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
     <nav class="mainnav">
+      <a class="pulse-link" href="{{ site.pulse_url }}">📰 AI&nbsp;Pulse</a>
       <a href="index.html"{% if active=='home' %} class="on"{% endif %}>Home</a>
       {% for n in nav %}<a href="{{ n.slug }}.html"{% if active==n.slug %} class="on"{% endif %}>{{ n.emoji }} {{ n.title }}</a>{% endfor %}
       <a href="news.html"{% if active=='news' %} class="on"{% endif %} class="news-link">📡 The Wire</a>
@@ -54,6 +55,7 @@
     <div class="footer-links">
       {% for n in nav %}<a href="{{ n.slug }}.html">{{ n.title }}</a>{% endfor %}
       <a href="news.html">The Wire</a>
+      <a href="{{ site.pulse_url }}">AI Pulse</a>
       <a href="{{ site.repo }}" target="_blank" rel="noopener">Source on GitHub</a>
     </div>
   </div>

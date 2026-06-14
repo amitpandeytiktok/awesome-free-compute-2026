@@ -41,6 +41,8 @@ h1,h2,h3,h4{line-height:1.2;font-weight:800;letter-spacing:-.02em}
 .mainnav a:hover{color:var(--text);background:var(--panel);text-decoration:none}
 .mainnav a.on{color:var(--text);background:var(--panel-2)}
 .mainnav .gh{color:var(--accent);border:1px solid var(--border-2)}
+.mainnav .pulse-link{color:#fff;background:linear-gradient(135deg,#2563EB,#0EA5E9);font-weight:700}
+.mainnav .pulse-link:hover{color:#fff;filter:brightness(1.08)}
 .nav-toggle{display:none;background:var(--panel);border:1px solid var(--border);color:var(--text);font-size:1.2rem;border-radius:9px;padding:5px 11px;cursor:pointer}
 
 /* ===== hero ===== */

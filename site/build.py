@@ -31,6 +31,7 @@ SITE = {
     "tagline": "The field guide to $0 AI — compute, tokens, media & the stack.",
     "url": "https://amitpandeytiktok.github.io/awesome-free-compute-2026",
     "repo": "https://github.com/amitpandeytiktok/awesome-free-compute-2026",
+    "pulse_url": "https://ai.techwaveacademy.com/",
     "year": 2026,
 }
 
